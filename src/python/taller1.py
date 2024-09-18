@@ -609,4 +609,3 @@ def sumaPares():
 print(sumaPares())
 
 
-
