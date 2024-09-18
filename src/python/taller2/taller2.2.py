@@ -6,7 +6,7 @@ número hasta 1 utilizando un
 buclewhile.
 """
 def imprimirNumeros():
-    num = int(input("Ingrese un número entero positivo: "))
+    num = int(input("Ingrese un número entero positivo mayor a 1: "))
     while  num >= 1:
         print(num)
         num -= 1

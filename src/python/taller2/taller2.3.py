@@ -19,4 +19,4 @@ def comprobarCantraseña():
         print('contraseña no es valida')
 
 if __name__ == '__main__':
-    comprobarCantraseña()  
+    comprobarCantraseña()
