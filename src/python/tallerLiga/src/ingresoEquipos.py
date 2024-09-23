@@ -1,6 +1,7 @@
 import src.modulos.add as add
 import src.modulos.exitProgram as ex
 import src.modulos.delete as  del_
+import src.modulos.see as see
 import os 
 equipos = []
 def ingreso():
@@ -20,12 +21,9 @@ def ingreso():
                 equipos = add.addEquipos(equipos)
                 os.system('clear')
             case '2' :
-                pass
+                eliminar = del_.eliminarEquipos(equipos)
             case '3' :
-                if equipos:
-                    print("Equipos actuales:", equipos)
-                else:
-                    print("No hay equipos registrados.")
+                mirar = see.mirarEquipos(equipos)
             case '4' :
                 papas = ex.exitOpcion()
                 os.system('clear')
