@@ -1,3 +1,4 @@
+import src.modulos.see as see
 def addEquipos(equipos):
     nombre = input('Ingrese el nombre del equipo: ').strip()
     if not nombre:
@@ -17,6 +18,17 @@ def addEquipos(equipos):
         print('chao')
     return equipos
 
-
-def addJugadores(jugadores):
-    pass
+def addPlantel(equipos):
+    mirar = see.plantelEquipos(equipos)
+    jugadores = []
+    a = 11
+    i = 0
+    if mirar == False:
+        input('vuelva al menu principal y cree un equipo para asignar un plantel')
+        return
+    else:
+        for i in range(a):
+            i =+ 1
+            jugador = input('ingrese el nombre del jugador')
+            jugadores.append(jugador.lower())
+        equipos.append([mirar,jugadores])

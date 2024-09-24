@@ -1,8 +1,11 @@
 import src.ingresoEquipos as ing
+import src.registroPlantel as reg
 import src.modulos.exitProgram as ex
 import os
+equipos = []
 def menu ():
     mondongo = True
+    global equipos
     while mondongo == True:
         print("""
                     1. Ingresar equipos de torneos
@@ -15,9 +18,9 @@ def menu ():
         os.system('clear')
         match decision :
             case '1' :
-                ing.ingreso()
+                ing.ingreso(equipos)
             case '2' :
-                pass
+                reg.registroPlantel(equipos)
             case '3' :
                 pass
             case '4' :

@@ -3,11 +3,10 @@ import src.modulos.exitProgram as ex
 import src.modulos.delete as  del_
 import src.modulos.see as see
 import os 
-equipos = []
-def ingreso():
+
+def ingreso(equipos):
     papas = True
-    while papas :
-        global equipos 
+    while papas : 
         print("""
                     1. Ingresar equipo
                     2. Eliminar equipo
