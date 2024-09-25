@@ -1,26 +1,27 @@
 import src.modulos.see as see
 import src.modulos.add as add
 import src.modulos.exitProgram as ex
+import src.modulos.see as see
+import src.modulos.clear as cle
 import os
 
 def registroPlantel(equipos):
     papas = True
     while papas : 
         print("""
-                    1. Ingresar plantel tecnico
-                    2. --
-                    3. --
-                    4. Salir
+                    1. Ingresar plantel 
+                    2. ingresar tecnicos
+                    3. Salir
             """)
         decision = input('Elija la opcion a la que desea acceder: ')
-        os.system('clear')
+        cle.clearScreen()
         match decision :
             case '1' :
-                agregar = add.addPlantel(equipos)
+                add.addPlantel(equipos)
+                cle.clearScreen()
             case '2' :
-                pass
+                add.addTecnico(equipos)
+                cle.clearScreen()
             case '3' :
-                pass
-            case '4' :
                 papas = ex.exitOpcion()
-                os.system('clear')
+                cle.clearScreen()

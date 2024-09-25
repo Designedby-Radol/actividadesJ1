@@ -1,9 +1,3 @@
-"""
-Escribe un programa que solicite al usuario ingresar el día, el mes y el año de
-una fecha. Luego, verifica si la fecha es válida o no. Considera los diferentes
-casos, como los días de cada mes y si el año es bisiesto. Muestra un mensaje
-indicando si la fecha es válida o no.
-"""
 def esBisiesto(año):
     return año % 4 == 0 and (año % 100 != 0 or año % 400 == 0)
 
@@ -20,14 +14,11 @@ def esFechaValida(dia, mes, año):
         return dia  <= 29 if esBisiesto(año) else dia <= 28
     return False
 
-def fecha():
-    dia = int(input('Ingrese el día: '))
-    mes = int(input('Ingrese el mes: '))
-    año = int(input('Ingrese el año: '))
+def fecha(dia, mes, año):
     if esFechaValida(dia, mes, año):
         print('La fecha es válida')
     else:
         print('La fecha no es válida')
-
+    return
 
 

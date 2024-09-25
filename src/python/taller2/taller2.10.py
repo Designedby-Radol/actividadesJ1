@@ -47,7 +47,7 @@ def main():
     mes, totalKwConsumido, estrato = valores()
     valorKw,multiEstrato = calcularValores(estrato, mes)
     pago = calculadoraEnergetica(valorKw,totalKwConsumido, multiEstrato)
-    print(f'El valor a pagar por concepto de energía eléctrica es: ${pago}')
+    print(f'El valor a pagar p  ºr concepto de energía eléctrica es: ${pago}')
 
 if __name__ == '__main__':
     main()
